@@ -88,6 +88,6 @@ node dist/cron.js report   # raat 10 baje -> console + WhatsApp (template config
 - `creative_ids` pichhle **Messages** ads ke hone chahiye, taaki unka CTA destination se match kare.
 - Guard ke date ranges server ke timezone ke hisaab se chalte hain. Server ka `TZ` ad account ke timezone pe set karo (jaise `Asia/Kolkata`).
 
-## No-code option: `meta-ads-coach` skill
+## No-code option: `wedding-ads` skill
 
-Don't want to run a server? `skills/meta-ads-coach/` is a Claude skill. Upload it as a zip in claude.ai → Settings → Capabilities → Skills, then attach an Ads Manager export and ask "best ad kaun sa?". It analyzes the file and explains lead tracking, budget maths and setup, and it can use this MCP or a connector (Windsor/Supermetrics/Pipeboard) for live data.
+Don't want to run a server? `skills/wedding-ads/` is a Claude skill. Upload it as a zip in claude.ai → Settings → Capabilities → Skills, then attach an Ads Manager export and ask "best ad kaun sa?". It analyzes the file and explains lead tracking, budget maths and setup, and it can use this MCP or a connector (Windsor/Supermetrics/Pipeboard) for live data.
