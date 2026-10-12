@@ -1,0 +1,32 @@
+{
+  "name": "meta-ex-mcp",
+  "version": "0.1.0",
+  "description": "Meta Ads MCP for Indian local businesses: audit past ads, build warm audiences, launch PAUSED drafts, auto-pause losers, daily lead report. Works with Claude and ChatGPT.",
+  "type": "module",
+  "main": "dist/http.js",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts",
+    "dev:http": "tsx src/http.ts",
+    "dev:stdio": "tsx src/stdio.ts",
+    "start": "node dist/http.js",
+    "start:stdio": "node dist/stdio.js",
+    "guard": "node dist/cron.js guard",
+    "report": "node dist/cron.js report"
+  },
+  "engines": { "node": ">=20" },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "express": "^5.3.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
